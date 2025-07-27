@@ -53,6 +53,22 @@ function Usercontext({ children }) {
                 setspeaking(false)
             }, 5000)
         }
+        if (command.includes("open") && command.includes("whatsapp")) {
+            window.open("https://www.whatsapp.com/", "_blank")
+            speak("opening Whatsapp")
+            setPrompt("Opening Whatsapp...")
+            setTimeout(() => {
+                setspeaking(false)
+            }, 5000)
+        }
+        if (command.includes("open") && command.includes("google")) {
+            window.open("https://www.google.com/", "_blank")
+            speak("opening google")
+            setPrompt("Opening Google...")
+            setTimeout(() => {
+                setspeaking(false)
+            }, 5000)
+        }
         else {
             airesponse(command)
         }

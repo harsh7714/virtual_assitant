@@ -54,7 +54,7 @@ function Usercontext({ children }) {
             }, 5000)
         }
         if (command.includes("open") && command.includes("whatsapp")) {
-            window.open("whatsapp://", "_blank")
+            window.open("https://wa.me/", "_blank")
             speak("opening Whatsapp")
             setPrompt("Opening Whatsapp...")
             setTimeout(() => {

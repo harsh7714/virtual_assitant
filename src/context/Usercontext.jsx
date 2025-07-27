@@ -69,7 +69,7 @@ function Usercontext({ children }) {
                 setspeaking(false)
             }, 5000)
         }
-        if (command.includes("open")||command.includes("harsh")||command.includes("linkedin")) {
+        if (command.includes("open")&&command.includes("linkedin")) {
             window.open("https://www.linkedin.com/in/harsh-gupta-589826289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank")
             speak("opening harsh linkedin profile")
             setPrompt("Opening Harsh Linkedin Profile...")
@@ -77,7 +77,7 @@ function Usercontext({ children }) {
                 setspeaking(false)
             }, 5000)
         }
-         if (command.includes("open")||command.includes("harsh")||command.includes("instagram")) {
+         if (command.includes("open")&&command.includes("instagram")) {
             window.open("https://www.instagram.com/?deoia=1", "_blank")
             speak("opening harsh instagram profile")
             setPrompt("Opening Harsh Instagram Profile...")

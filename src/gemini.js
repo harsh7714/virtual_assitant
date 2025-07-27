@@ -1,7 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAoQK9DOs7eyMjBIOL9hwUOsx2RL7bk9-k" });
-
+const ai = new GoogleGenAI({ apiKey: "AIzaSyCCgSQN4Zff9lQVYZtQBmhfQqTTuEWbOvg" });
 async function main(prompt) {
   const response = await ai.models.generateContent({
     model: "gemini-2.0-flash",
@@ -11,6 +10,7 @@ async function main(prompt) {
         temperature: 2.0,
     }
   });
+  console.log(response.text)
   return response.text;
 }
 
